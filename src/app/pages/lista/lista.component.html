@@ -1,0 +1,17 @@
+<div class="lista-tareas">
+  <h2>Tareas</h2>
+  <div class="tareas-container">
+    <div *ngFor="let tarea of listaTareas | async" class="tarea">
+      <div class="imagen-tarea" [style.backgroundImage]="'url('+tarea.imagenUrl+')'" >
+      </div>
+      <div class="informacion-tarea">
+        <h3>{{ tarea.etiqueta }}</h3>
+        <p><strong>Fecha:</strong> {{ tarea.fecha }}</p>
+        <p><strong>Descripción:</strong> {{ tarea.descripcion }}</p>
+        <button (click)="goEditar(tarea)">Editar</button>
+        <button (click)="goDelete(tarea)">Eliminar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>

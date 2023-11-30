@@ -1,0 +1,64 @@
+#Inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://i0.wp.com/www.adams.es/blogs/alumno/files/2022/03/portada-apuntes-ok-.jpg?fit=3628%2C2455&ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 5px;
+    color: aliceblue;
+    font-size: 2.3em;
+}
+
+#Inicio h1{
+    text-shadow: 1px 1px 0px gray,
+    1px 2px 0 gray,
+    1px 3px 0 gray,
+    1px 4px 0 gray,
+    1px 5px 0 gray,
+    1px 6px 0 gray,
+    1px 7px 0 gray,
+    1px 8px 0 gray,
+    1px 9px 0 gray,
+    1px 10px 0 gray,
+    1px 11px 0 gray,
+    1px 12px 0 gray,
+    1px 13px 0 gray,
+    1px 14px 0 gray,
+    1px 15px 0 gray;
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 19px;
+
+}
+
+#Inicio button{
+    
+    background-color: rgba(165, 9, 9, 0.5);
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    width: 118px; 
+    height: 65px; 
+    margin-top: 15px;
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 0.5em;
+    display: flex;
+    text-align: center;
+    
+}
+
+#Inicio button:hover{
+    background-color: black;
+}

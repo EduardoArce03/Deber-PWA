@@ -1,0 +1,35 @@
+
+<section id="Login">
+    <div class="container">
+        <div class="informacion">
+            <div class="informacion-child">
+                <h1>Bienvenido </h1>
+                <p>No te olvides de realizar tus actividades</p>
+            </div>
+        </div>
+            <div class="container-form">
+                <h3>Ingresa tu nota/tarea !</h3>               
+                <div class="container-form-child">
+                    <form action="" name="Receta" id="form" >
+                    
+                        <label for="txtNota">Ingresar Nota</label>
+                        <input type="text" name="txtNota" [(ngModel)]="nota.descripcion">
+
+                        <label for="txtFecha">Ingresar Fecha</label>
+                        <input type="date" name="txtFecha" [(ngModel)]="nota.fecha">
+
+                        <label for="txtEtiqueta">Ingresar Etiqueta</label>
+                        <input type="text" name="txtEtiqueta" [(ngModel)]="nota.etiqueta">
+                        
+                        <label for="txtImagen">Ingresar URL de Imagen</label>
+                        <input type="text" name="txtImagen" [(ngModel)]="nota.imagenUrl">
+                        
+                        <button (click)="saveTarea()">Ingresar</button>
+                        <button (click)="goListado()">Listar</button>
+
+                    </form>
+                </div>
+            </div>
+        
+    </div>
+</section>       
