@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { ViewTareaComponent } from './pages/view-tarea/view-tarea.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { InicioComponent } from './pages/inicio/inicio.component';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 
 
@@ -34,6 +35,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
     FormsModule,
     provideFirebaseApp(() => initializeApp(enviroment.firebaseConfig)),
     provideFirestore(() => getFirestore()),
+    AngularFirestoreModule.enablePersistence(),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
